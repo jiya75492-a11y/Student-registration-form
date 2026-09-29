@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f6fa;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: rgb(28, 79, 124);
+            font-size: 36px;
+            text-align: center;
+            margin: 25px;
+        }
+.form-box {
+    width: 550px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 6px solid rgb(28, 89, 124);
+    border-radius: 15px;
+    background-color: coffe;
+    box-shadow: 15ppx 15px 30px gray;
+
+    animation-name: formAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes formAnimation {
+    from {
+        transform: translateY(0px);
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px gray;
+    }
+
+    to {
+        transform: translateY(-10px);
+        border-radius: 25px;
+        box-shadow: 15px 20px 30px gray;
+    }
+}
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            color: #1c4f7c;
+            width: 40%;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #aaa;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 70px;
+            resize: none;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #1c4f7c;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            padding: 10px 25px;
+            background-color: #1c4f7c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d3555;
+            box-shadow: 0 5px 10px gray;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <h1>STUDENT REGISTRATION FORM</h1>
+
+    <div class="form-box">
+
+        <form>
+            <table>
+
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email Id</td>
+                    <td>
+                        <input type="email" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Contact Number</td>
+                    <td>
+                        <input type="number" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <textarea name="Address"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hobby</td>
+                    <td>
+                        <input type="checkbox" name="Hobby" value="Reading"> Reading
+                        <input type="checkbox" name="Hobby" value="Writing"> Writing
+                        <input type="checkbox" name="Hobby" value="Travelling"> Travelling
+                        <input type="checkbox" name="Hobby" value="Sports"> Sports
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Area</td>
+                    <td>
+                        <select name="area">
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Surat">Surat</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Rajkot">Rajkot</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        h1{
+            color: rgb(28, 79, 124);
+            font-size: 36px;
+            font-style: serif;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"> STUDENT REGISTRATION FORM</h1>
+    <form>
+        <table class="demo" border="1" cellspacing="1" cellspacing="1" align="center">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" required></td>
+            </tr>
+
+            <tr>
+                <td>Email Id</td>
+                <td><input type="email" required></td>
+            </tr>
+
+            <tr>
+                <td>Contact Number</td>
+                <td><input type="number" required></td>
+            </tr>
+
+              <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female">Female
+                </td>      
+            </tr>
+             <tr>
+                <td>Address</td>
+                <td><textarea name="Address"></textarea></td>
+              </tr>
+              <tr>
+                <td>Hobby</td>
+                <td><input type="checkbox" name="Hobby" value="Reading">Reading
+                    <input type="checkbox" name="Hobby" value="writing">Writing
+                    <input type="checkbox" name="Hobby" value="Travelling">Travelling
+                     <input type="checkbox" name="Hobby" value="Sports">Sports
+                </td>     
+            </tr>
+            <tr>
+                <td>area</td>
+                <td>
+                    
+                    <select name="cars" id="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+             <option value="audi">Audi</option>
+</select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
